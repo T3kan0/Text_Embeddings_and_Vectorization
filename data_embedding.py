@@ -59,7 +59,7 @@ for name, content in pdf_texts.items():
 
 def create_tfidf_embeddings(pdf_texts):
     """
-    Create TF-IDF embeddings for each PDF text. This is a frequency-based embedding technique
+    Create TF-IDF (Term Frequency-Inverse Document Frequency) embeddings for each PDF text. This is a frequency-based embedding technique
     Returns a dict: {filename: [{'chunk': chunk_text, 'vector': vector}]}
     """
     all_embeddings = {}

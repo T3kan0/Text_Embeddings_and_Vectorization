@@ -16,17 +16,17 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 # Files directory (relative or absolute)
 
-folder = Path("/Users/mbonanits/Desktop/A_STEP/2252/Automation/Tutor/Content Docs/Faculty/")
+folder = Path("/***********************************/Content Docs/Faculty/")
 
 # Get all files (non-recursive)
 files = sorted(folder.glob("*"))         # all files
 # Or only PDFs:
-pdf_files = sorted(folder.glob("*.pdf"))
+#pdf_files = sorted(folder.glob("*.pdf"))
 
 for p in files:
     print(p)         
 
-#### Function for Extract Text from PDF ##############################################################
+#### Function to Extract Text Data from PDF ##############################################################
 
 def extract_text_from_pdfs(pdf_paths):
     """
